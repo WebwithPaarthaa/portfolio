@@ -1,5 +1,5 @@
 var sidenavbar = document.querySelector(".sidenav-bar")
-sidenavbar.computedStyleMap.display = "none"
+sidenavbar.style.display = "none"
 
 function shownavbar(){
     sidenavbar.style.left="0%"
