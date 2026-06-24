@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    scroll-behavior: smooth;
+    scroll-behavior:auto;
 }
 
 body {
@@ -9,6 +9,10 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+}
+
+section{
+    scroll-margin-top: 80px;
 }
 
 h6 {
@@ -75,6 +79,9 @@ h6 {
 .header {
     background-color: ivory;
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -87,6 +94,7 @@ h6 {
     display: flex;
     justify-content: space-around;
     gap: 5px;
+    padding-right: 20px;
     font-size: small;
 }
 
@@ -104,7 +112,7 @@ a:hover {
 .about {
     display: flex;
     justify-content: left;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: 75px;
     width: 80%;
     height: fit-content;
@@ -122,7 +130,7 @@ a:hover {
 .skill {
     display: flex;
     justify-content: left;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 75px;
     width: 80%;
     height: fit-content;
@@ -134,7 +142,7 @@ a:hover {
 .edu {
     display: flex;
     justify-content: left;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 75px;
     width: 80%;
     height: fit-content;
@@ -146,7 +154,7 @@ a:hover {
 .project {
     display: flex;
     justify-content: left;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 75px;
     width: 80%;
     height: fit-content;
@@ -171,7 +179,7 @@ img {
     padding: 30px;
     padding-top: 100px;
     margin-top: 100px;
-    background-color: gainsboro;
+    background-color:rgba(147, 177, 129, 0.737);
 
 }
 
@@ -179,6 +187,7 @@ img {
 
     .toggle {
         display: block;
+        padding-right: 20px;
     }
 
     .link {
@@ -187,10 +196,9 @@ img {
 
     .header {
         display: flex;
-        padding-left: 20px;
-        margin-bottom: 50px;
-        gap: 10px;
-        align-items: center;
+        top: 0;
+        width: 100%;
+        position: fixed;
     }
 
     .about {
