@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    scroll-behavior:auto;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 section{
-    scroll-margin-top: 80px;
+    scroll-margin-top: 115px;
 }
 
 h6 {
@@ -49,6 +49,8 @@ h6 {
 .sidenav-bar {
     background-color: #1d232c;
     color: azure;
+    padding: 20px;
+    padding-top: 50px;
     width: 50%;
     height: 100%;
     position: fixed;
@@ -66,7 +68,8 @@ h6 {
 .Nav-link {
     margin-bottom: 10px;
     padding-left: 5px;
-    padding-top: 10px;
+    padding-top: 20px;
+    font-size: large;
 }
 
 .Nav-link a{
@@ -82,6 +85,7 @@ h6 {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -113,73 +117,111 @@ a:hover {
     display: flex;
     justify-content: left;
     margin-top: 150px;
-    margin-left: 75px;
-    width: 80%;
-    height: fit-content;
+    width: 95%;
+    height: 350px;
     padding: 30px;
-    border-radius: 25px;
+    background-color:rgba(203, 178, 155, 0.737);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.me{
+    padding-top:30px;
 }
 
 .photo {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 70px; 
 }
 
-.skill {
+.bg{
     display: flex;
-    justify-content: left;
-    margin-top: 100px;
-    margin-left: 75px;
-    width: 80%;
-    height: fit-content;
-    padding: 30px;
-    border-radius: 25px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    background-color:rgba(165, 177, 129, 0.737);
+    width: 90%;
+    height: 300px; 
+    padding: 50px;
+    padding-left: 70px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.edu {
-    display: flex;
-    justify-content: left;
-    margin-top: 100px;
-    margin-left: 75px;
-    width: 80%;
-    height: fit-content;
-    padding: 30px;
-    border-radius: 25px;
+.skill{
+    width: 20%;
+    height: 250px;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    border-radius: 15px;
+    color:black;
+    background-color:rgba(224, 241, 213, 0.737);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
+
+.edu{
+    flex: 1;
+    width: 45%;
+    height: 270px;
+    padding-top: 30px;
+    padding-left: 50px;
+    background-color:  rgba(224, 241, 213, 0.737);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
 
 .project {
     display: flex;
     justify-content: left;
     margin-top: 100px;
-    margin-left: 75px;
-    width: 80%;
-    height: fit-content;
+    width: 100%;
+    height:360px;
     padding: 30px;
-    border-radius: 25px;
+    background-color:rgba(250, 255, 255, 0.737);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.skills {
-    font-size: small;
+.project p {
+    font-size: medium;
+    padding-top: 10px;
+}
+.project h6 {
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
+.skill h6, .edu h6 {
+    font-size: x-large;
+    padding-bottom: 10px;
+    
+}
+.skill p, .edu p {
+    font-size: medium;
+    padding-top: 10px;
 }
 
 img {
     border-radius: 100px;
-    margin: 20px;
+}
+
+.contact h6 {
+    font-size: x-large;
+    padding-bottom: 20px;
 }
 
 .contact {
     display: flex;
-    height: 200px;
-    justify-content: center;
+    height: 300px;
+    font-size: larger;
     padding: 30px;
+    padding-left: 50px;
     padding-top: 100px;
     margin-top: 100px;
-    background-color:rgba(147, 177, 129, 0.737);
+    background-color:rgba(202, 226, 228, 0.737);
 
 }
 
@@ -197,62 +239,93 @@ img {
     .header {
         display: flex;
         top: 0;
-        width: 100%;
+        width: 400px;
         position: fixed;
     }
 
+    section {
+        scroll-margin-top: 80px;
+    }
     .about {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin: 50px;
-        margin-top: 100px;
-        width: fit-content;
-        height: fit-content;
-        padding: 30px;
-        border-radius: 25px;
+        padding-top: 0px;
+        width: 360px;
+        height:650px;
         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     }
 
-    .skill {
-        display: flex;
-        justify-content: left;
-        margin: 50px;
-        margin-top: 30px;
-        width: 60%;
-        height: fit-content;
-        padding: 30px;
-        border-radius: 25px;
-        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    }
+    .bg{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    background-color:rgba(165, 177, 129, 0.737);
+    width: 300px;
+    height: 700px; 
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
 
-    .edu {
-        display: flex;
-        justify-content: left;
-        margin: 50px;
-        margin-top: 30px;
-        width: 60%;
-        height: fit-content;
-        padding: 30px;
-        border-radius: 25px;
-        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    }
+.skill{
+    width:100%;
+    height: 250px;
+    align-items: center;
+    border-radius: 15px;
+    color:black;
+    background-color:rgba(224, 241, 213, 0.737);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.edu{
+    flex: 1;
+    width: 100%;
+    height: 270px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color:  rgba(224, 241, 213, 0.737);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
 
     .photo {
         border-radius: 100px;
-        display: flex;
-        justify-content: center;
+        padding: 0px;
     }
 
     .project {
         display: flex;
         justify-content: left;
-        margin: 50px;
-        margin-top: 30px;
-        width: 60%;
+        margin-top: 150px;
+        width: 360px;
         height: fit-content;
         padding: 30px;
-        border-radius: 25px;
+        background-color:rgba(250, 255, 255, 0.737);
         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     }
+
+    .contact {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 360px;
+    
+    font-size: small;
+    padding: 10px;
+    padding-left: 50px;
+    padding-top: 100px;
+    margin-top: 100px;
+    background-color:rgba(202, 226, 228, 0.737);
+}
+.contact  td{
+    padding-top:10px;
+
+}
+.s{
+    font-size: larger;
+    font-weight: bold;
+}
 }

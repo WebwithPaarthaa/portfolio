@@ -8,3 +8,9 @@ function shownavbar(){
 function closenavbar(){
     sidenavbar.style.left="-60%"
 }
+
+var resume = document.querySelector(".resume")
+
+resume.addEventListener("click", () => {
+    alert("Resume Downloaded Successfully")
+});
