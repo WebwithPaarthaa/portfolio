@@ -12,5 +12,5 @@ function closenavbar(){
 var resume = document.querySelector(".resume")
 
 resume.addEventListener("click", () => {
-    alert("Resume Downloaded Successfully")
+    alert("Resume Downloading...")
 });
